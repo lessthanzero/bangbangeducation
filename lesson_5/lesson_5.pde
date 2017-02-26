@@ -16,18 +16,20 @@ void draw() {
   //strokeWeight(1);
   noStroke();
   //line(pmouseX, pmouseY, mouseX, mouseY);
-  lights();
+  ambientLight(255, 64, 255);
+  directionalLight(128, 200, 64, 0, 0, -1);
+  //lights();
   drawSphere();
 }
 
 void drawSphere() {
   float diameter = random(10, 30);
-  float zIndex = random(-50, 50);
+  float zIndex = random(-150, 150);
   color fillColor = color(random(0, 255), random(0, 255), random(0, 255));
   //ellipse(mouseX, mouseY, diameter, diameter);
   fill(fillColor);
   translate( mouseX, mouseY,  zIndex );
-  sphere(diameter);
+  sphere(10);
   translate( -1 * mouseX, -1 * mouseY, -1 * zIndex );
 }
 
@@ -38,5 +40,6 @@ void drawSphere() {
  and in right part – with another. Or, instead: split top and bottom halves.
  3. Try to use different shapes and polygons instead of spheres in 3D space.
  4. Draw new shape only if coordinates change.
+ 5. Try to use ambientLight() and directionalLight() instead of lights();
  
 */
