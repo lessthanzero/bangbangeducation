@@ -1,3 +1,8 @@
+# Mine additions
+*.zip
+
+# Defaul Processing
+
 .DS_Store
 applet
 application.linux32

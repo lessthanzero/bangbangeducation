@@ -18,7 +18,7 @@ color[] cs = {
         
 color fillColor = color(255, 255, 255);
 
-void setup( ){
+void setup() {
   size(640, 360);
   
   device = new AudioDevice(this, 48000, 32);
@@ -55,23 +55,23 @@ void keyPressed() {
   switch (key) {
     
     case '1':
-      file[0].play(0.5, 1.0);
+      file[0].play(1.0, 1.0);
       break;
   
     case '2':
-      file[1].play(0.5, 1.0);
+      file[1].play(1.0, 1.0);
       break;
     
     case '3':
-      file[2].play(0.5, 1.0);
+      file[2].play(1.0, 1.0);
       break;
     
     case '4':
-      file[3].play(0.5, 1.0);
+      file[3].play(1.0, 1.0);
       break;
     
     case '5':
-      file[4].play(0.5, 1.0);
+      file[4].play(1.0, 1.0);
       break;
     
   }
